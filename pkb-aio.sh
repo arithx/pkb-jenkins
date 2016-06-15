@@ -1,6 +1,8 @@
 git clone https://github.com/meteorfox/PerfKitBenchmarker
 cd PerfKitBenchmarker/
 git checkout openstack-cli-provider
+pip install -r requirements.txt
+pip install -r requirements-openstack.txt
 pip install .
 
 source /opt/stack/devstack/openrc
