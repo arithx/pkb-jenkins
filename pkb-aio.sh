@@ -2,7 +2,8 @@ git clone https://github.com/meteorfox/PerfKitBenchmarker
 cd PerfKitBenchmarker/
 git checkout openstack-cli-provider
 pip install -r requirements.txt
-pip install -r requirements-openstack.txt
+sed -i "s/python-neutronclient==4.1.1/python-neutronclient>=4.1.1/g" perfkitbenchmarker/providers/openstack/requirements.txt
+pip install -r perkitbenchmarker/providers/openstack/requirements.txt
 pip install .
 
 . /opt/stack/devstack/openrc
