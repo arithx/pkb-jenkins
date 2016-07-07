@@ -3,6 +3,8 @@ cd PerfKitBenchmarker/
 git checkout openstack-cli-provider
 pip install -r requirements.txt
 sed -i "s/python-neutronclient==4.1.1/python-neutronclient>=4.1.1/g" perfkitbenchmarker/providers/openstack/requirements.txt
+sed -i "s/python-novaclient==4.0.0/python-novaclient>=4.0.0/g" perfkitbenchmarker/providers/openstack/requirements.txt
+sed -i "s/python-openstackclient==2.4.0/python-openstackclient>=2.4.0/g" perfkitbenchmarker/providers/openstack/requirements.txt
 pip install -r perkitbenchmarker/providers/openstack/requirements.txt
 pip install .
 
